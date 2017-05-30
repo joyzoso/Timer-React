@@ -1,11 +1,12 @@
 //require keywords for webpack to use the modules
-var React = require('react');
-var ReactDOM = require('react-dom');
+let React = require('react');
+let ReactDOM = require('react-dom');
 //object destructuring syntax es6
 //4 variables from the react-router library
-var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-var Main = require('Main');
-
+let{Route, Router, IndexRoute, hashHistory} = require('react-router');
+let Main = require('Main');
+let Timer = require('Timer');
+let Countdown = require('Countdown');
 
 
 //Load foundation
@@ -20,6 +21,8 @@ require('style!css!sass!applicationStyles')
 ReactDOM.render(
 <Router history={hashHistory}>
   <Route path="/" component={Main}>
+    <Route path="countdown" component={Countdown}/>
+  <IndexRoute component={Timer}/>
   </Route>
 </Router>,
   document.getElementById('app')
