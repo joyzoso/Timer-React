@@ -19,7 +19,6 @@ describe('render', () => {
     let actualText = $el.find('.clock-text').text();
 
     //make assertion
-
     expect(actualText).toBe('01:02');
   });
 });
