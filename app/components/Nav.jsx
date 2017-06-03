@@ -7,7 +7,7 @@ let Nav = () => {
       <div className="top-bar-left">
         <ul className="menu">
             <li className="menu-text">
-              React Timer App
+              We're heading for Venus
             </li>
             <li>
               <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Timer </IndexLink>
@@ -20,7 +20,7 @@ let Nav = () => {
       <div className="top-bar-right">
         <ul className="menu">
           <li className="menu-text">
-              Created by <a href="http://rockupuncture.com" target="_blank">Joy Earl</a>
+              The Final   <a href="http://rockupuncture.com" target="_blank">Countdown</a>
             </li>
         </ul>
       </div>
